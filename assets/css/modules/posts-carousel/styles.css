@@ -1,0 +1,211 @@
+.posts-carousel-pagination {
+	text-align: center;
+	margin-top: 20px;
+}
+.posts-carousel-pagination .swiper-pagination-bullet {
+	margin: 0 7px;
+	width: 8px;
+	height: 8px;
+}
+.athemes-addons-posts-carousel {
+	overflow: hidden;
+}
+.athemes-addons-posts-carousel-container .swiper-button-next,
+.athemes-addons-posts-carousel-container .swiper-button-prev {
+	background-image: none !important;
+	margin-top: -26px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	transition: background-color 0.2s ease-in-out;
+}
+.athemes-addons-posts-carousel-container .swiper-button-next:after,
+.athemes-addons-posts-carousel-container .swiper-button-prev:after {
+	display: none;
+}
+.athemes-addons-posts-carousel-container .swiper-button-prev {
+    left: -70px;
+}
+.athemes-addons-posts-carousel-container .swiper-button-next {
+    right: -70px;
+}
+@media (max-width: 767px) {
+    .athemes-addons-posts-carousel-container .swiper-button-prev {
+        left: 0;
+    }
+    .athemes-addons-posts-carousel-container .swiper-button-next {
+        right: 0;
+    }
+}
+.athemes-addons-posts-carousel-container i,
+.athemes-addons-posts-carousel-container svg {
+	fill: #000;
+	opacity: 1;
+	transition: fill 0.2s ease-in-out;
+}
+.athemes-addons-posts-carousel .entry-date + .updated {
+	display: none;
+}
+.post-info > * {
+	margin-right: 10px;
+}
+.post-info > *:last-of-type {
+	margin-right: 0;
+}
+.post-info.delimiter-dot > *,
+.post-info.delimiter-vertical > *,
+.post-info.delimiter-horizontal > * {
+	margin-right: 0;
+}
+.post-info.delimiter-dot > *:after,
+.post-info.delimiter-vertical > *:after,
+.post-info.delimiter-horizontal > *:after {
+	padding: 0 10px;
+}
+.post-info.delimiter-dot > *:last-child:after,
+.post-info.delimiter-vertical > *:last-child:after,
+.post-info.delimiter-horizontal > *:last-child:after {
+	display: none;
+}
+.post-info.delimiter-dot > *:after {
+	content: '';
+	background: #000;
+	opacity: 0.2;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	padding: 0;		
+}
+.post-info.delimiter-vertical > *:after {
+	content: '\007C';
+}
+.post-info.delimiter-horizontal > *:after {
+	content: '\0023AF';
+}
+.athemes-post-item {
+	transition: all 0.3s ease;
+}
+.athemes-post-item .post-item-thumb,
+.athemes-post-item .post-content > * {
+	margin-bottom: 12px;
+}
+.athemes-post-item .post-content > *:last-child {
+	margin-bottom: 0;
+}
+.athemes-post-item .post-content a {
+	text-decoration: none;
+}
+.athemes-addons-posts-carousel .athemes-post-item .item-title {
+	font-size: 20px;
+}
+.athemes-addons-posts-carousel .athemes-post-item .post-content .item-title a {
+	color: var(--athemes-addons-headings-color, #1c1c1c);
+}
+.athemes-addons-posts-carousel .athemes-post-item .post-content .item-title:hover {
+	opacity: 0.8;
+}
+.athemes-addons-posts-carousel .athemes-post-item .post-content .post-info a {
+	color: var(--athemes-addons-meta-color, #767676);
+}
+.athemes-addons-posts-carousel .athemes-post-item .post-content .post-info a:hover {
+	color: var(--athemes-addons-meta-hover-color, #000);
+}
+.athemes-post-item .read-more-wrapper {
+	margin-top: 20px;
+}
+@media (min-width:991px) {
+	.athemes-addons-posts-carousel.style-list .athemes-post-item {
+		display: flex;
+		align-items: center;
+	}
+	.athemes-addons-posts-carousel.style-list .post-content {
+		padding-left: 30px;
+	}
+}
+.athemes-post-item .post-content .cats-label a {
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 1;
+	background: #333;
+	border-radius: 5px;
+	color: #fff;
+}
+.athemes-post-item .post-content .cats-label a:hover {
+	background: #000;
+	color: #fff;
+}
+.athemes-posts-pagination {
+	display: flex;
+	margin-top: 30px;
+}
+.athemes-posts-pagination a {
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none !important;
+	color: var(--athemes-addons-meta-color, #767676);
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-modern"] .post-content {
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	margin: -30px 20px 0;
+	position: relative;
+	z-index: 11;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-modern"].style-list .post-content {
+	margin: 0 0 0 -30px;
+	width: calc(100% + 30px);
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-modern"] {
+	text-align: center;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .item-title,
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-modern"] .item-title {
+    font-size: 20px;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .athemes-post-item .post-content .item-title a {
+	color: #fff;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-modern"] .swiper-wrapper {
+    padding-bottom: 18px !important;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .athemes-post-item {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .athemes-post-item::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .athemes-post-item {
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .athemes-post-item .post-content {
+	position: relative;
+	z-index: 11;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .post-content a {
+	color: #fff;
+	transition: all 0.3s ease;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .post-content a:hover {
+	color: #fff;
+	opacity: 0.8;
+}
+.athemes-addons-posts-carousel[data-skin-id="athemes-addons-posts-carousel-banner"] .post-info.delimiter-dot>:after {
+	background: #fff;
+}

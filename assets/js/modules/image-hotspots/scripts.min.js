@@ -1,0 +1,1 @@
+(function(n){var o=function(n,o){var t=n.find(".hotspot-element");o.each(t,function(n,t){o(this).on("click",function(n){o(this).find(".hotspot-tooltip.on-click").toggleClass("hotspot-clicked")})})};n(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/athemes-addons-image-hotspots.default",o)})})(jQuery);

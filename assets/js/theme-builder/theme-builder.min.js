@@ -1,0 +1,1 @@
+(function(s){const e=s('.athemes-addons-custom-header[data-header-type="sticky"]');if(!e.length)return;let t=0,o=!1;const n=()=>{const n=s(window).scrollTop();n>300&&!o?(e.addClass("is-sticky"),o=!0):n<=300&&o&&(e.removeClass("is-sticky"),o=!1),t=n};s(window).on("scroll",()=>{requestAnimationFrame(n)})})(jQuery);

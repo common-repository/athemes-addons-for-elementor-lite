@@ -1,0 +1,12 @@
+.aafe-ml-parallax-layer {
+	--size: 100px;
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	width: var(--size);
+	height: var(--size);
+	background-size: contain;
+	background-repeat: no-repeat;
+}

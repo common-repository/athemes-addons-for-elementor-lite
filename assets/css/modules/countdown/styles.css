@@ -1,0 +1,42 @@
+.athemes-addons-countdown {
+	min-height: 10px;
+	display: flex;
+	--countdown-element-size: 70px;
+	--countdown-element-gap: 30px;
+}
+.aafe-flex-align-center .athemes-addons-countdown {
+	justify-content: center;
+}
+.aafe-flex-align-right .athemes-addons-countdown {
+	justify-content: flex-end;
+}
+.athemes-addons-countdown .countdown-timer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: var(--countdown-element-gap);
+}
+.countdown-expired-content {
+	display: none;
+}
+.athemes-addons-countdown .countdown-element {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: var(--countdown-element-size);
+	height: var(--countdown-element-size);
+}
+.athemes-addons-countdown .countdown-element span {
+	display: block;
+}
+.athemes-addons-countdown .timer-element {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.athemes-addons-countdown .countdown-separator {
+	font-size: 1.5em;
+}

@@ -1,0 +1,53 @@
+.athemes-addons-dual-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	--separator-size: 30px;
+}
+.aafe-align-left .athemes-addons-dual-buttons {
+	justify-content: flex-start;
+}
+.aafe-align-right .athemes-addons-dual-buttons {
+	justify-content: flex-end;
+}
+.athemes-addons-dual-buttons .dual-buttons-inner {
+	display: flex;
+	position: relative;
+	width: 38%;
+	align-items: center;
+}
+.athemes-addons-dual-buttons .dual-buttons-sep {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: var(--separator-size);
+	height: var(--separator-size);
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+}
+.athemes-addons-dual-buttons a.elementor-button-link {
+	display: flex;
+	text-decoration: none;
+	font-weight: 600;
+	width: 100%;
+	border-radius: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+.athemes-addons-dual-buttons .dual-buttons-first,
+.athemes-addons-dual-buttons .dual-buttons-last {
+  flex: 1;
+}
+.athemes-addons-dual-buttons .elementor-button-text {
+	flex-grow: 0;
+}

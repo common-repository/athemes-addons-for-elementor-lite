@@ -1,0 +1,9 @@
+.aafe-mailchimp-form-wrapper.layout-stacked form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aafe-mailchimp-form-wrapper.layout-stacked input:not([type="submit"]) {
+	width: 100%;
+	margin-bottom: 20px;
+}

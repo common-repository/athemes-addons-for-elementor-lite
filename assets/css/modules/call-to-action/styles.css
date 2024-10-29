@@ -1,0 +1,97 @@
+.athemes-addons-call-to-action {
+	overflow: hidden;
+}
+.athemes-addons-call-to-action .call-to-action-inner {
+	display: flex;
+	min-height: 400px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.cta-image-position-before .athemes-addons-call-to-action .call-to-action-inner {
+	flex-direction: column;
+}
+.athemes-addons-call-to-action .call-to-action-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.athemes-addons-call-to-action .call-to-action-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	position: relative;
+	z-index: 11;
+}
+.athemes-addons-call-to-action .call-to-action-title {
+	margin: 0 0 15px;
+}
+.athemes-addons-call-to-action .call-to-action-content {
+	flex: 0 0 100%;
+}
+.athemes-addons-call-to-action .call-to-action-inner .call-to-action-image,
+.athemes-addons-call-to-action .call-to-action-inner .call-to-action-image + .call-to-action-content {
+	flex: 0 0 50%;
+}
+.athemes-addons-call-to-action .call-to-action-buttons .button {
+	text-decoration: none;
+	color: #fff;
+}
+.athemes-addons-call-to-action .call-to-action-buttons {
+	display: flex;
+	gap: 15px;
+	margin-top: 30px;
+	align-items: center;
+}
+.athemes-addons-call-to-action .content-icon {
+	margin-bottom: 15px;
+}
+.athemes-addons-call-to-action .content-icon {
+	line-height: 1;
+}
+.athemes-addons-call-to-action.content-layout-inline .call-to-action-content {
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0 0 100% !important;
+}
+.athemes-addons-call-to-action .content-icon img {
+	max-width: 150px;
+}
+.call-to-action-content .content-icon svg {
+	max-width: 60px;
+}
+.cta-content-align-center .call-to-action-buttons {
+	justify-content: center;
+}
+.cta-content-align-right .call-to-action-buttons {
+	justify-content: flex-end;
+}
+.athemes-addons-call-to-action .cta-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 0;
+}
+@media (max-width: 991px) {
+	.athemes-addons-call-to-action .call-to-action-inner {
+		display: block;
+	}
+}
+@media (max-width: 600px) {
+	.athemes-addons-call-to-action .call-to-action-content {
+		display: block;
+	}
+}
+.athemes-addons-call-to-action .button.aafe-button {
+	display: flex !important;
+	line-height: 1;
+}
+.athemes-addons-call-to-action .button.aafe-button .elementor-align-icon-right {
+	order: 11;
+}

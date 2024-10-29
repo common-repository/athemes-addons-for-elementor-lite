@@ -1,0 +1,16 @@
+.aafe-single-day {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.aafe-single-day:last-child {
+	border-bottom: none !important;
+}
+.business-hours-inner {
+	width: 100%;
+}
+.athemes-addons-business-hours {
+	display: flex;
+	flex-wrap: wrap;
+}

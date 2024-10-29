@@ -1,0 +1,111 @@
+.aafe-progress-wrapper {
+	position: relative;
+	--bg-color: #ddd;
+	--accent-color: #1c1c1c;
+	--border-radius: 15px;
+}
+.athemes-addons-progress-bar .progress-title {
+	display: block;
+	margin-bottom: 5px;
+}
+.aafe-progress-wrapper[data-layout="circle"] .progress-title {
+	text-align: center;
+}
+.aafe-progress-wrapper[data-layout="line"] {
+	--height: 40px;
+	border-radius: var(--border-radius);
+}
+.aafe-progress-container {
+	position: relative;
+	background-color: var(--bg-color);
+	height: var(--height);
+	line-height: var(--height);
+	border-radius: var(--border-radius);
+}
+.aafe-progress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	padding: 0 15px;
+	background-color: var(--accent-color);
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: var(--border-radius);
+}
+.aafe-text-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.aafe-progress-wrapper[data-layout="line"][data-position="inside"] .progress-text,
+.aafe-progress-wrapper[data-layout="line"][data-position="inside"] .progress-percentage {
+	color: #fff;
+}
+.aafe-progress-wrapper[data-layout="line"][data-stripes="yes"] .aafe-progress-bar::after {
+	content: '';
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-size: 40px 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.aafe-progress-wrapper[data-layout="line"][data-stripes="yes"][data-animated="yes"] .aafe-progress-bar::after {
+	animation: progress-bar-stripes 1s linear infinite;
+}
+@keyframes progress-bar-stripes {
+	from {
+		background-position: 40px 0;
+	}
+	to {
+		background-position: 0 0;
+	}
+}
+.aafe-progress-wrapper[data-layout="circle"] {
+	position: relative;
+}
+.aafe-progress-circle {
+	--progress: 0;
+	--stroke-width: 20px;
+	--size: 250px;
+	--half-size: calc(var(--size) / 2);
+	--radius: calc((var(--size) - var(--stroke-width)) / 2);
+	--circumference: calc(var(--radius) * pi * 2);
+	--dash: calc((var(--progress) * var(--circumference)) / 100);
+}
+.aafe-progress-circle svg circle {
+	stroke-width: var(--stroke-width);
+	fill: none;
+	stroke-linecap: round;
+}
+.aafe-progress-circle svg circle.circle-bg {
+	stroke: var(--bg-color);
+}
+.aafe-progress-circle svg circle.circle-fg {
+	transform: rotate(-90deg);
+	transform-origin: var(--half-size) var(--half-size);
+	stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+	stroke: var(--accent-color);
+}
+.aafe-circle-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+.aafe-progress-wrapper[data-layout="circle"] .progress-percentage {
+	font-size: 22px;
+}
+.aafe-progress-circle .aafe-icon {
+	width: 20px;
+}
+.aafe-progress-circle .aafe-lottie {
+	max-width: 120px;
+}

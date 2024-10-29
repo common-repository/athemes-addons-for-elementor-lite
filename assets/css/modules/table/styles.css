@@ -1,0 +1,112 @@
+.aafe-table-sorting th {
+	cursor: pointer;
+	position: relative;
+	padding-right: 15px;
+}
+
+.aafe-table-sorting th:before,
+.aafe-table-sorting th:after {
+	position: absolute;
+	right: 15px;
+	font-size: 10px;
+	line-height: 1;
+}
+
+.aafe-table-sorting th:before {
+	content: '';
+	border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid currentColor;
+	top: calc(50% - 6px);
+}
+.aafe-table-sorting th:after {
+	content: '';
+	border-left: 5px solid rgba(0, 0, 0, 0);
+	border-right: 5px solid rgba(0, 0, 0, 0);
+	border-top: 5px solid currentColor;
+	top: calc(50% + 1px);
+}
+.aafe-table-sorting th.asc:after,
+.aafe-table-sorting th.desc:before {
+	display: none;
+}
+.aafe-table-sorting th.asc:before,
+.aafe-table-sorting th.desc:after {
+	top: 50%;
+}
+.athemes-addons-table th span:not(.aafe-th-icon) {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.aafe-table-search {
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.aafe-hidden-row {
+	display: none;
+}
+.aafe-table-pagination {
+	margin-top: 15px;
+}
+.aafe-table-pagination-button {
+	cursor: pointer;
+	padding: 5px 10px;
+	margin-right: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	display: inline-block;
+}
+.aafe-table-pagination-button.active {
+	background-color: #f0f0f0;
+}
+
+.aafe-table-highlight-row tr:not(.aafe-table-header-row):hover {
+	background-color: #f0f0f0;
+}
+
+.aafe-table-highlight-cell td:hover {
+	background-color: #f0f0f0;
+}
+.aafe-table-highlight-rowcolumn table {
+	overflow: clip;
+}
+.aafe-table-highlight-rowcolumn td {
+	position: relative;
+}
+.aafe-table-highlight-rowcolumn tr:not(.aafe-table-header-row):hover {
+	background-color: #f0f0f0;
+}
+
+.aafe-table-highlight-rowcolumn td:hover::before {
+	position: absolute;
+	left: 0;
+	top: -300vh;
+	height: 300vw;
+	width: 100%;
+	z-index: -2;
+	content: "";
+	background-color: #f0f0f0;
+}
+
+.aafe-table-highlight-rowcolumn td:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.athemes-addons-table svg {
+	width: 18px;
+	vertical-align: middle;
+}
+.athemes-addons-table th img {
+	max-width: 18px;
+}
+.aafe-th-icon {
+	line-height: 1;
+}
+.aafe-table-header-top th span:not(.aafe-th-icon) {
+	flex-direction: column;
+}
+.aafe-table-responsive-yes .athemes-addons-table-wrapper {
+	overflow-x: auto;
+}
